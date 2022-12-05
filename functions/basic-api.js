@@ -1,8 +1,8 @@
-import { items } from '../public/data.js';
+import { items } from './data/data.js';
 
-exports.handler = async (event, context) => {
+export async function handler(event, context) {
     return {
         statusCode: 200,
         body: JSON.stringify(items),
     };
-};
+}

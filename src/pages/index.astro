@@ -1,9 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-console.log('hi');
 
-const response = await fetch('/api/hello').then((res) => res.text());
+let funxUrl = import.meta.env.DEV ? 'http://localhost:8888' : process.env.URL;
+const response = await fetch(`${funxUrl}/api/hello`).then((res) => res.text());
 
 let message = response;
 ---

@@ -1,4 +1,4 @@
-export const items = [
+export let items = [
     {
         id: 'recmg2a1ctaEJNZhu',
         name: 'utopia sofa',
