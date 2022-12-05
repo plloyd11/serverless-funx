@@ -2,6 +2,9 @@ import { items } from './data/data.js';
 
 export async function handler(event, context) {
     return {
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+        },
         statusCode: 200,
         body: JSON.stringify(items),
     };
