@@ -1,15 +1,22 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-let funxUrl = import.meta.env.DEV ? 'http://localhost:8888' : process.env.URL;
-const response = await fetch(`${funxUrl}/api/basic-api`).then((res) => res.json());
-const data = response;
+// import Layout from '../layouts/Layout.astro';
+// import Card from '../components/Card.astro';
+// let funxUrl = import.meta.env.DEV ? 'http://localhost:8888' : process.env.URL;
+// let furniture = [];
+
+// try {
+//     const response = await fetch(`${funxUrl}/api/basic-api`);
+//     const data = await response.json();
+//     furniture = data;
+// } catch (error) {
+//     throw new Error(`You fucked up: ${error}`);
+// }
 ---
 
-<Layout title="Basic API">
+<!-- <Layout title="Basic API">
     <section class="grid grid-cols-3 gap-4 px-4 mx-auto max-w-7xl">
         {
-            data.map((item) => (
+            furniture.map((item) => (
                 <Card
                     key={item.id}
                     title={item.name}
@@ -20,4 +27,4 @@ const data = response;
             ))
         }
     </section>
-</Layout>
+</Layout> -->

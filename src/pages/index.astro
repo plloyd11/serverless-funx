@@ -5,8 +5,6 @@ import Card from '../components/Card.astro';
 let funxUrl = import.meta.env.DEV ? 'http://localhost:8888' : process.env.URL;
 const response = await fetch(`${funxUrl}/api/hello`).then((res) => res.text());
 
-console.log(process.env.URL);
-
 let message = response;
 ---
 

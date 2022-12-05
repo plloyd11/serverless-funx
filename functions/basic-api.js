@@ -1,9 +1,10 @@
-import { items } from './data/data.js';
+import { items } from 'https://serverless-funx.netlify.app/data/data.js';
 
-export async function handler(event, context) {
+export async function handler() {
     return {
         headers: {
             'Access-Control-Allow-Origin': '*',
+            'Content-Type': 'application/json',
         },
         statusCode: 200,
         body: JSON.stringify(items),
