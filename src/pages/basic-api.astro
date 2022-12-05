@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-const response = await fetch('http://localhost:8888/api/basic-api').then((res) => res.json());
+const response = await fetch('/api/basic-api').then((res) => res.json());
 const data = response;
 ---
 

@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 console.log('hi');
 
-const response = await fetch('http://localhost:8888/api/hello').then((res) => res.text());
+const response = await fetch('/api/hello').then((res) => res.text());
 
 let message = response;
 ---
