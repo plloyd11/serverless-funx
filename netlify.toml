@@ -6,13 +6,14 @@
     autoLaunch = true
 
 [build]
-    command = 'yarn build'
-    functions = 'functions/'
+    command = 'astro build'
+    functions = 'netlify/functions'
     publish = 'dist'
 
 [functions]
     node_bundler = 'esbuild'
     included_files = ['data/**']
+    external_node_modules = ["astro"]
 
 [[ redirects ]]
     from = '/api/*'

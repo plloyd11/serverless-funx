@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+
+let funxUrl = import.meta.env.DEV ? 'http://localhost:8888' : process.env.URL;
+---
+
+<Layout title="Welcome to Astro.">
+    <section class="px-4 mx-auto space-y-12 max-w-7xl">
+        <p>hi</p>
+    </section>
+</Layout>
